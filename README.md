@@ -1,16 +1,22 @@
-### Hi there 👋
+# **Wind Turbine Model**
+Copyright 2009-2020 The MathWorks(TM), Inc.
 
-<!--
-**Shivshankar2246/Shivshankar2246** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![View Wind Turbine Model on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/25752-wind-turbine-model)
 
-Here are some ideas to get you started:
+Open project "Wind_Turbine.prj" to set the path and load key values.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Please note:
+
+1. Wind_Turbine_Demo_Script.html will walk you through most parts of the wind turbine demo.  
+
+2. Some configurations are invalid.  
+   Turbine Inputs, Blade Loads, Main Controller, and Pitch Controller must be compatible
+
+	Valid combinations:	
+	Turbine Inputs	Main Controller	Blade Loads	Pitch Controller
+	Commands	Direct Input	Torque		Inner Loop
+	(all other)	Wind Input	(not Torque)	PI on AoA
+
+3. The model Wind_Turbine_Flexible_Blades.slx is not built to be 
+attached to Wind_Turbine.slx.  It is proof of concept only.
+
